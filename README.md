@@ -29,17 +29,21 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ## 界面预览
 
-### 配置诊断
+### 连接成功与节点浏览
 
-![DComEasy 配置诊断](assets/screenshots/diagnosis-zh-CN.png)
+![DComEasy OPC DA 连接成功与节点浏览](assets/screenshots/connection-zh-CN.png)
 
-### 执行配置
+### 单次读取
 
-![DComEasy 执行配置](assets/screenshots/configuration-zh-CN.png)
+选择一个点位执行“读取一次”，显示当前值、质量和服务器时间戳，不会自动开启定时刷新。
 
-### OPC DA 连接测试
+![DComEasy OPC DA 单次读取](assets/screenshots/single-read-zh-CN.png)
 
-![DComEasy OPC DA 连接测试](assets/screenshots/connection-zh-CN.png)
+### 批量定时刷新
+
+勾选多个点位后，可以统一设置刷新间隔。下图中两个点位均按 5 秒间隔刷新。
+
+![DComEasy OPC DA 批量定时刷新](assets/screenshots/batch-refresh-5s-zh-CN.png)
 
 ## 版本功能
 
@@ -57,14 +61,14 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ## 系统要求
 
-- Windows 桌面环境，可运行 x86 应用。
+- 支持 64 位 Windows；DComEasy 以 32 位进程运行，以兼容 OPC DA 及相关 COM 组件。
 - 使用管理员权限安装和运行 DComEasy。
 - 使用完整的离线安装包；安装包已包含所需的 .NET 运行时。
 - 连接测试需要可访问的 OPC DA 服务器及该环境下有效的 OPC 用户信息。
 
 ## 下载与安装
 
-1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases) 下载最新的 `DComEasy-Setup-win-x86.exe`。
+1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases) 下载最新的 `DComEasy-Setup-v1.0.0.exe`。
 2. 以管理员身份运行安装程序。
 3. 从开始菜单启动 DComEasy，并按提示以管理员身份运行。
 

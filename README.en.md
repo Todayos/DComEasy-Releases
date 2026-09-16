@@ -29,17 +29,21 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 
 ## Screenshots
 
-### Configuration diagnostics
+### Connected server and node browser
 
-![DComEasy configuration diagnostics](assets/screenshots/diagnosis-zh-CN.png)
+![DComEasy OPC DA connection and node browser](assets/screenshots/connection-zh-CN.png)
 
-### Configuration management
+### One-time read
 
-![DComEasy configuration management](assets/screenshots/configuration-zh-CN.png)
+Read a selected point once to display its current value, quality, and server timestamp without enabling scheduled polling.
 
-### OPC DA connection testing
+![DComEasy OPC DA one-time read](assets/screenshots/single-read-zh-CN.png)
 
-![DComEasy OPC DA connection testing](assets/screenshots/connection-zh-CN.png)
+### Batch scheduled polling
+
+Select multiple points and apply one polling interval to all of them. Both points below use a five-second interval.
+
+![DComEasy OPC DA batch scheduled polling](assets/screenshots/batch-refresh-5s-zh-CN.png)
 
 ## Editions
 
@@ -57,14 +61,14 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 
 ## Requirements
 
-- A Windows desktop environment capable of running an x86 application.
+- Supports 64-bit Windows. DComEasy runs as a 32-bit process for compatibility with OPC DA and related COM components.
 - Administrator privileges to install and run DComEasy.
 - The complete offline installer, which includes the required .NET runtime.
 - A reachable OPC DA server and valid OPC user credentials for connection testing.
 
 ## Download and installation
 
-1. Download the latest `DComEasy-Setup-win-x86.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
+1. Download the latest `DComEasy-Setup-v1.0.0.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
 2. Run the installer as an administrator.
 3. Start DComEasy from the Start menu and run it with administrator privileges when prompted.
 
