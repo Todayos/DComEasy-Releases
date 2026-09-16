@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="224" viewBox="0 0 960 224" role="img" aria-labelledby="title desc">
+  <title id="title">DComEasy — OPC DA / DCOM</title>
+  <desc id="desc">Windows 桌面配置与诊断工具：配置诊断、执行配置、连接测试。</desc>
+  <rect width="960" height="224" rx="18" fill="#f3f5f7"/>
+  <rect x=".5" y=".5" width="959" height="223" rx="17.5" fill="none" stroke="#ccd4de"/>
+  <path d="M40 36h40" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <g font-family="Segoe UI,Microsoft YaHei UI,Arial,sans-serif">
+    <text x="94" y="41" font-size="13" letter-spacing="2" fill="#526173">WINDOWS · OPC DA / DCOM</text>
+    <rect x="40" y="65" width="88" height="88" rx="19" fill="#2563eb"/>
+    <g transform="translate(40 65) scale(.34375)" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M44 87h32c15 0 20 9 20 23v30c0 15-6 23-20 23H44Z"/>
+      <path d="M166 87v76m0-76h48m-48 38h41m-41 38h48"/>
+      <path d="M96 125h70" stroke-width="12"/>
+      <rect x="107" y="109" width="45" height="32" rx="8" fill="#fff" stroke="none"/>
+    </g>
+    <text x="150" y="106" font-size="48" font-weight="700" letter-spacing="-1" fill="#202b3b">DComEasy</text>
+    <text x="151" y="140" font-size="21" fill="#526173">让工业现场的配置与排查更清晰</text>
+    <g transform="translate(150 168)"><rect width="151" height="30" rx="7" fill="#dbeafe"/><text x="12" y="20" font-size="12" fill="#1d4ed8">01</text><text x="37" y="20" font-size="12" font-weight="600" fill="#1d4ed8">配置诊断</text><path d="M160 15h10m-3-3 3 3-3 3" fill="none" stroke="#7b8796" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g transform="translate(327 168)"><rect width="151" height="30" rx="7" fill="#dbeafe"/><text x="12" y="20" font-size="12" fill="#1d4ed8">02</text><text x="37" y="20" font-size="12" font-weight="600" fill="#1d4ed8">执行配置</text><path d="M160 15h10m-3-3 3 3-3 3" fill="none" stroke="#7b8796" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g transform="translate(504 168)"><rect width="151" height="30" rx="7" fill="#dbeafe"/><text x="12" y="20" font-size="12" fill="#1d4ed8">03</text><text x="37" y="20" font-size="12" font-weight="600" fill="#1d4ed8">连接测试</text></g>
+  </g>
+  <g fill="none" stroke="#7b8796" stroke-width="1.5">
+    <path d="M789 82v-26h85m-85 86v27h85M742 112h47"/>
+    <rect x="754" y="85" width="70" height="54" rx="12" fill="#fff"/>
+    <rect x="856" y="38" width="66" height="36" rx="9" fill="#fff"/>
+    <rect x="856" y="151" width="66" height="36" rx="9" fill="#fff"/>
+    <path d="m777 112 9 9 17-19" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M872 56h20m-20 110h25m-25 9h15" stroke="#2563eb" stroke-linecap="round"/>
+    <circle cx="735" cy="112" r="6" fill="#2563eb" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+name: 问题报告 / Bug report
+description: 报告可以稳定复现的错误或异常行为
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。提交前请搜索已有 Issue，并移除密码、激活码、账号、主机名、IP 地址等敏感信息。
+  - type: input
+    id: version
+    attributes:
+      label: DComEasy 版本
+      placeholder: 例如 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: 例如 Windows 11 24H2 x64
+    validations:
+      required: true
+  - type: dropdown
+    id: page
+    attributes:
+      label: 涉及页面
+      options:
+        - 配置诊断
+        - 执行配置
+        - 连接测试
+        - 网络检测
+        - 授权
+        - 安装或卸载
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请按顺序列出能够稳定复现问题的操作。
+      placeholder: |
+        1. 打开……
+        2. 输入……
+        3. 点击……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果与完整错误信息
+      description: 错误内容请完整粘贴，不要只提供截断信息。
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 可添加已脱敏的截图、日志和其他有助于定位问题的信息。
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我已搜索现有 Issue，没有发现相同问题。
+          required: true
+        - label: 我已从内容和附件中移除密码、激活码及其他敏感信息。
+          required: true

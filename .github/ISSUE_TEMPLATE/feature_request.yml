@@ -1,0 +1,35 @@
+name: 功能建议 / Feature request
+description: 提议新的功能或使用体验改进
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: 感谢你的建议。请描述实际使用场景和需要解决的问题。
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 在什么环境和工作流程中遇到了问题？
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 当前问题
+      description: 现有行为为什么无法满足需求？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 希望 DComEasy 提供怎样的行为或结果？
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 目前的替代方法
+      description: 如果存在临时解决方式，请一并说明。
