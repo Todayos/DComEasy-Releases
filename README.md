@@ -84,6 +84,10 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 | 自动添加防火墙规则 | — | 开放 |
 | HTML 诊断报告 | — | 无水印 |
 
+## 1 个月专业版免费试用
+
+可通过邮件申请 DComEasy 专业版免费试用 1 个月。请在软件“授权”页面复制本机标识，然后按照[免费试用申请说明与邮件模板](docs/free-trial.md)提交申请。
+
 ## 系统要求
 
 - 支持 64 位 Windows；DComEasy 以 32 位进程运行，以兼容 OPC DA 及相关 COM 组件。

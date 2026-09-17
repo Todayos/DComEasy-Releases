@@ -84,6 +84,10 @@ Select multiple points and apply one polling interval to all of them. Both point
 | Automatically add firewall rules | — | Available |
 | HTML diagnostic reports | — | No watermark |
 
+## One-month Professional trial
+
+You can request a free one-month trial of DComEasy Professional by email. Copy the machine identifier from the License page, then follow the [trial request instructions and email template](docs/free-trial.en.md).
+
 ## Requirements
 
 - Supports 64-bit Windows. DComEasy runs as a 32-bit process for compatibility with OPC DA and related COM components.
