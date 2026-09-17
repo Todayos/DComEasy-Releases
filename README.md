@@ -32,6 +32,18 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ## 界面预览
 
+### 配置诊断
+
+运行诊断后集中查看 OPC 组件、DCOM 权限和协议状态，并根据诊断结论继续排查。
+
+![DComEasy 配置诊断](assets/screenshots/diagnosis-zh-CN.png)
+
+### 执行配置
+
+验证 OPC 用户后预览待执行的配置规则，确认 DCOM 权限、身份验证级别和协议变更后再执行。
+
+![DComEasy 执行配置](assets/screenshots/configuration-zh-CN.png)
+
 ### 连接成功与节点浏览
 
 ![DComEasy OPC DA 连接成功与节点浏览](assets/screenshots/connection-zh-CN.png)

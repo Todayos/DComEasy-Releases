@@ -32,6 +32,18 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 
 ## Screenshots
 
+### Configuration diagnosis
+
+Run diagnosis to review OPC components, DCOM permissions, and protocol status together, then continue from the diagnostic conclusion.
+
+![DComEasy configuration diagnosis](assets/screenshots/diagnosis-zh-CN.png)
+
+### Apply configuration
+
+Validate the OPC user, preview the pending rules, and review DCOM permissions, authentication level, and protocol changes before applying them.
+
+![DComEasy configuration management](assets/screenshots/configuration-zh-CN.png)
+
 ### Connected server and node browser
 
 ![DComEasy OPC DA connection and node browser](assets/screenshots/connection-zh-CN.png)
