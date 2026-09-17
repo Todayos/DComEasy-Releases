@@ -4,15 +4,15 @@
 
 ## Trial details
 
-DComEasy Professional is available as a **free one-month trial**. The trial license is bound to the machine identifier supplied with the request. During the trial period, Professional features such as applying DCOM configuration, creating OPC users, and scheduled polling are available.
+DComEasy Professional is available as a **free one-month trial**. The trial activation code is not tied to the computer used for the request. Professional users can deploy the complete DComEasy client to a target computer and enter the received code there to enable Professional features during the trial period.
 
-Install DComEasy first, open the **License** page, and copy the machine identifier. Send it by email. Do not post machine identifiers, activation codes, or other sensitive information in a public issue.
+Send the request by email. Do not post the activation code you receive or other sensitive information in a public issue.
 
 ## How to apply
 
-1. Open the DComEasy **License** page and copy the machine identifier.
-2. Complete the template below and email it to `wangzd1618@gmail.com`.
-3. Enter the 16-character activation code on the License page after receiving it.
+1. Complete the template below and email it to `wangzd1618@gmail.com`.
+2. Install the complete DComEasy client on the target computer.
+3. After receiving the 16-character activation code, open the **License** page on that computer, enter the code, and activate it.
 4. After activation, the License page displays the trial status and expiry date.
 
 [Send a trial request](mailto:wangzd1618@gmail.com?subject=DComEasy%20Professional%20one-month%20free%20trial%20request)
@@ -28,17 +28,17 @@ DComEasy Professional one-month free trial request
 
 Name:
 Company or project (optional):
-Machine identifier:
 DComEasy version:
 Intended use:
 
-I am requesting a free one-month trial of DComEasy Professional and confirm that the machine identifier belongs to the computer that requires activation.
+I am requesting a free one-month trial of DComEasy Professional.
 ```
 
 ## Notes
 
-- Copy the machine identifier from the computer on which Professional will be used.
-- An activation code is valid only for the computer included in the request.
 - Never email a Windows password, OPC user password, or an existing activation code.
-- A different computer requires a new request with its machine identifier.
+- Professional users can deploy the complete client to target computers and activate it with the same code. Do not copy only the application EXE from an installation directory.
+- The activation code may be reused within the authorized scope. The requester must protect it and must not publish, sell, rent, or provide it to unrelated parties.
+- If misuse results from disclosure by the requester or unauthorized distribution, the publisher reserves the right to pursue applicable legal remedies.
+- Trial eligibility and validity are determined by the activation code you receive.
 - If no reply arrives, check the spam folder and confirm that the request was sent to `wangzd1618@gmail.com`.

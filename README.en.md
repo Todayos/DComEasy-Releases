@@ -64,29 +64,31 @@ Select multiple points and apply one polling interval to all of them. Both point
 
 > The Free edition is available without activation. Professional features use a 16-character offline activation code with an expiry set when the license is issued.
 
+**Legend:** ✅ Included　🟡 Limited　⭐ Professional only　— Unavailable
+
 | Feature | Free | Professional |
 | --- | --- | --- |
-| Configuration diagnosis and inspection of DCOM permissions and components | Available | Available |
-| Local OPC user validation | Available | Available |
-| Preview configuration changes | Available | Available |
-| Basic OPC DA connection testing | Available | Available |
-| OPC node browsing and full ItemID queries | Available | Available |
-| One-time reading of a single point | Available | Available |
-| Network, port, and firewall status checks | Available | Available |
-| Connection history, logs, error details, and bilingual UI | Available | Available |
-| PDF diagnostic reports | Free-edition watermark | No watermark |
-| Create a local OPC user | — | Available |
-| Apply DCOM configuration | — | Available |
-| Remove existing DCOM permissions | — | Available |
-| Install and repair the OPC runtime environment | — | Available |
-| Continuous refresh for a single point | — | Available |
-| Batch point monitoring | — | Available |
-| Automatically add firewall rules | — | Available |
-| HTML diagnostic reports | — | No watermark |
+| Configuration diagnosis and inspection of DCOM permissions and components | ✅ Included | ✅ Included |
+| Local OPC user validation | ✅ Included | ✅ Included |
+| Preview configuration changes | ✅ Included | ✅ Included |
+| Basic OPC DA connection testing | ✅ Included | ✅ Included |
+| OPC node browsing and full ItemID queries | ✅ Included | ✅ Included |
+| One-time reading of a single point | ✅ Included | ✅ Included |
+| Network, port, and firewall status checks | ✅ Included | ✅ Included |
+| Connection history, logs, error details, and bilingual UI | ✅ Included | ✅ Included |
+| PDF diagnostic reports | 🟡 Free-edition watermark | ✅ No watermark |
+| Create a local OPC user | — | ⭐ Professional only |
+| Apply DCOM configuration | — | ⭐ Professional only |
+| Remove existing DCOM permissions | — | ⭐ Professional only |
+| Install and repair the OPC runtime environment | — | ⭐ Professional only |
+| Continuous refresh for a single point | — | ⭐ Professional only |
+| Batch point monitoring | — | ⭐ Professional only |
+| Automatically add firewall rules | — | ⭐ Professional only |
+| HTML diagnostic reports | — | ⭐ No watermark |
 
 ## One-month Professional trial
 
-You can request a free one-month trial of DComEasy Professional by email. Copy the machine identifier from the License page, then follow the [trial request instructions and email template](docs/free-trial.en.md).
+You can request a free one-month trial of DComEasy Professional by email. Professional users can deploy the complete DComEasy client to a target computer and activate it there with the received code. See the [trial instructions and email template](docs/free-trial.en.md).
 
 ## Requirements
 

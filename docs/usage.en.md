@@ -53,7 +53,7 @@ The Professional edition can add local TCP or UDP inbound rules in batches. A fi
 
 ## Licensing
 
-The **License** page shows the edition, license status, machine identifier, and expiry. The Professional edition uses a 16-character offline activation code. Never include an activation code in a public issue, screenshot, or log.
+The **License** page shows the edition, license status, activation method, and expiry. Professional uses a 16-character offline activation code that can be copied to a client computer. Never include an activation code in a public issue, screenshot, or log.
 
 ## Troubleshooting
 
