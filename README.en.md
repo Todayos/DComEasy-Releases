@@ -62,13 +62,11 @@ Select multiple points and apply one polling interval to all of them. Both point
 
 ![DComEasy OPC DA batch scheduled polling](assets/screenshots/batch-refresh-5s-en-US.png)
 
-## Free access in the current version
+## Getting started
 
-Version 1.0.2 provides all features free of charge, without an account, activation code, online verification, or trial expiry.
+All features are available after installation, without an account, activation code, or online verification.
 
 Configuration, user creation, component installation and repair, continuous and batch monitoring, firewall rules, and watermark-free PDF / HTML reports are available directly, including in offline environments.
-
-Any pricing changes for future versions will be announced separately. Free access to this version does not mean every future version will remain free.
 
 ## Requirements
 
@@ -100,4 +98,4 @@ Include the DComEasy version, Windows version, reproduction steps, expected resu
 
 Copyright © 2026 Todayos. All rights reserved.
 
-DComEasy is proprietary software. The current free version may be installed and used, including at work. Public access to this repository does not grant source modification, resale, or redistribution rights. The license terms included with each release package govern use of the software. Third-party components remain subject to their respective licenses.
+DComEasy is proprietary software. The software may be installed and used, including at work. Public access to this repository does not grant source modification, resale, or redistribution rights. The license terms included with each release package govern use of the software. Third-party components remain subject to their respective licenses.
