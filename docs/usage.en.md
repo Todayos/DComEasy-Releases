@@ -15,13 +15,13 @@ The installer includes the required .NET runtime. Do not copy only `DComEasy.exe
 
 Open **Diagnostics** and select **Run Check**. DComEasy inspects local OPC DA / DCOM settings, components, permissions, and protocols. Diagnosis does not change system settings or start services.
 
-Each result includes its status and guidance. After diagnosis, export a PDF report when you need an archive; the Professional edition can also export standalone HTML.
+Each result includes its status and guidance. After diagnosis, export a watermark-free PDF or standalone HTML report for archiving.
 
 ## Apply configuration
 
 Open **Configuration**, then:
 
-1. Enter and validate the OPC user. The Professional edition can create a local user when required.
+1. Enter and validate the OPC user. You can create a local user when required.
 2. Select the authentication level, protocols, and DCOM permissions needed for the target environment.
 3. Preview the proposed changes.
 4. Apply the configuration after reviewing every change, then inspect each result.
@@ -49,11 +49,11 @@ Points and polling settings remain only in the current target session.
 
 Open **Network**, enter a host and port, and start the check. Remote checks cover host resolution, Ping, and the target TCP port. Local checks also show listeners and a summary of matching firewall rules.
 
-The Professional edition can add local TCP or UDP inbound rules in batches. A firewall rule permits traffic but does not start the service that listens on the port.
+You can add local TCP or UDP inbound rules in batches. A firewall rule permits traffic but does not start the service that listens on the port.
 
-## Licensing
+## Free access and developer contact
 
-The **License** page shows the edition, license status, activation method, and expiry. Professional uses a 16-character offline activation code that can be copied to a client computer. Never include an activation code in a public issue, screenshot, or log.
+Version 1.0.2 provides all features without an account, activation code, online verification, or trial expiry. The sidebar Contact entry shows the GitHub address and email, available to view and copy offline.
 
 ## Troubleshooting
 

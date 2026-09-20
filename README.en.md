@@ -32,63 +32,43 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 
 ## Screenshots
 
+Captured from the v1.0.2 application using sample diagnostic and connection data for illustration, not results from a production environment.
+
 ### Configuration diagnosis
 
 Run diagnosis to review OPC components, DCOM permissions, and protocol status together, then continue from the diagnostic conclusion.
 
-![DComEasy configuration diagnosis](assets/screenshots/diagnosis-zh-CN.png)
+![DComEasy configuration diagnosis](assets/screenshots/diagnosis-en-US.png)
 
 ### Apply configuration
 
 Validate the OPC user, preview the pending rules, and review DCOM permissions, authentication level, and protocol changes before applying them.
 
-![DComEasy configuration management](assets/screenshots/configuration-zh-CN.png)
+![DComEasy configuration management](assets/screenshots/configuration-en-US.png)
 
 ### Connected server and node browser
 
-![DComEasy OPC DA connection and node browser](assets/screenshots/connection-zh-CN.png)
+![DComEasy OPC DA connection and node browser](assets/screenshots/connection-en-US.png)
 
 ### One-time read
 
 Read a selected point once to display its current value, quality, and server timestamp without enabling scheduled polling.
 
-![DComEasy OPC DA one-time read](assets/screenshots/single-read-zh-CN.png)
+![DComEasy OPC DA one-time read](assets/screenshots/single-read-en-US.png)
 
 ### Batch scheduled polling
 
 Select multiple points and apply one polling interval to all of them. Both points below use a five-second interval.
 
-![DComEasy OPC DA batch scheduled polling](assets/screenshots/batch-refresh-5s-zh-CN.png)
+![DComEasy OPC DA batch scheduled polling](assets/screenshots/batch-refresh-5s-en-US.png)
 
-## Edition comparison
+## Free access in the current version
 
-> The Free edition is available without activation. Professional features use a 16-character offline activation code with an expiry set when the license is issued.
+Version 1.0.2 provides all features free of charge, without an account, activation code, online verification, or trial expiry.
 
-**Legend:** ✅ Included　🟡 Limited　⭐ Professional only　— Unavailable
+Configuration, user creation, component installation and repair, continuous and batch monitoring, firewall rules, and watermark-free PDF / HTML reports are available directly, including in offline environments.
 
-| Feature | Free | Professional |
-| --- | --- | --- |
-| Configuration diagnosis and inspection of DCOM permissions and components | ✅ Included | ✅ Included |
-| Local OPC user validation | ✅ Included | ✅ Included |
-| Preview configuration changes | ✅ Included | ✅ Included |
-| Basic OPC DA connection testing | ✅ Included | ✅ Included |
-| OPC node browsing and full ItemID queries | ✅ Included | ✅ Included |
-| One-time reading of a single point | ✅ Included | ✅ Included |
-| Network, port, and firewall status checks | ✅ Included | ✅ Included |
-| Connection history, logs, error details, and bilingual UI | ✅ Included | ✅ Included |
-| PDF diagnostic reports | 🟡 Free-edition watermark | ✅ No watermark |
-| Create a local OPC user | — | ⭐ Professional only |
-| Apply DCOM configuration | — | ⭐ Professional only |
-| Remove existing DCOM permissions | — | ⭐ Professional only |
-| Install and repair the OPC runtime environment | — | ⭐ Professional only |
-| Continuous refresh for a single point | — | ⭐ Professional only |
-| Batch point monitoring | — | ⭐ Professional only |
-| Automatically add firewall rules | — | ⭐ Professional only |
-| HTML diagnostic reports | — | ⭐ No watermark |
-
-## One-month Professional trial
-
-You can request a free one-month trial of DComEasy Professional by email. Professional users can deploy the complete DComEasy client to a target computer and activate it there with the received code. See the [trial instructions and email template](docs/free-trial.en.md).
+Any pricing changes for future versions will be announced separately. Free access to this version does not mean every future version will remain free.
 
 ## Requirements
 
@@ -99,7 +79,7 @@ You can request a free one-month trial of DComEasy Professional by email. Profes
 
 ## Download and installation
 
-1. Download the latest `DComEasy-Setup-v1.0.0.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
+1. Download the latest `DComEasy-Setup-v1.0.2.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
 2. Run the installer as an administrator.
 3. Start DComEasy from the Start menu and run it with administrator privileges when prompted.
 
@@ -120,4 +100,4 @@ Include the DComEasy version, Windows version, reproduction steps, expected resu
 
 Copyright © 2026 Todayos. All rights reserved.
 
-DComEasy is proprietary software. Public access to this repository does not grant permission to copy, modify, redistribute, reverse engineer, or use the software commercially. The license terms included with each release package govern use of the software. Third-party components remain subject to their respective licenses.
+DComEasy is proprietary software. The current free version may be installed and used, including at work. Public access to this repository does not grant source modification, resale, or redistribution rights. The license terms included with each release package govern use of the software. Third-party components remain subject to their respective licenses.
