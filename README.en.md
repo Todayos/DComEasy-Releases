@@ -38,38 +38,6 @@ Start with diagnostics, validate or create the OPC user, preview and apply confi
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Diagnostic reports**: export PDF or HTML for troubleshooting, handover, and archiving.
 - <img src="assets/icon-language.svg" width="20" height="20" alt=""> **Bilingual interface**: switch between Simplified Chinese and English in the sidebar; the application remembers your selection.
 
-## Screenshots
-
-Captured from the v1.0.2 application using sample diagnostic and connection data for illustration, not results from a production environment.
-
-### Configuration diagnosis
-
-Run diagnosis to review OPC components, DCOM permissions, and protocol status together, then continue from the diagnostic conclusion.
-
-![DComEasy configuration diagnosis](assets/screenshots/diagnosis-en-US.png)
-
-### Apply configuration
-
-Validate the OPC user, preview the pending rules, and review DCOM permissions, authentication level, and protocol changes before applying them.
-
-![DComEasy configuration management](assets/screenshots/configuration-en-US.png)
-
-### Connected server and node browser
-
-![DComEasy OPC DA connection and node browser](assets/screenshots/connection-en-US.png)
-
-### One-time read
-
-Read a selected point once to display its current value, quality, and server timestamp without enabling scheduled polling.
-
-![DComEasy OPC DA one-time read](assets/screenshots/single-read-en-US.png)
-
-### Batch scheduled polling
-
-Select multiple points and apply one polling interval to all of them. Both points below use a five-second interval.
-
-![DComEasy OPC DA batch scheduled polling](assets/screenshots/batch-refresh-5s-en-US.png)
-
 ## Requirements
 
 - Supports 64-bit Windows. DComEasy runs as a 32-bit process for compatibility with OPC DA and related COM components.

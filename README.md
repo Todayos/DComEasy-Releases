@@ -38,38 +38,6 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **诊断报告**：导出 PDF 或 HTML，便于现场交付、问题排查和归档。
 - <img src="assets/icon-language.svg" width="20" height="20" alt=""> **双语界面**：支持简体中文与英文，可在侧栏切换并保留选择。
 
-## 界面预览
-
-以下截图采集自 v1.0.2 实际界面，使用示例诊断与连接数据展示功能，不代表现场检测结果。
-
-### 配置诊断
-
-运行诊断后集中查看 OPC 组件、DCOM 权限和协议状态，并根据诊断结论继续排查。
-
-![DComEasy 配置诊断](assets/screenshots/diagnosis-zh-CN.png)
-
-### 执行配置
-
-验证 OPC 用户后选择身份验证级别、协议和 DCOM 权限，预览并确认变更后再执行。
-
-![DComEasy 执行配置](assets/screenshots/configuration-zh-CN.png)
-
-### 连接成功与节点浏览
-
-![DComEasy OPC DA 连接成功与节点浏览](assets/screenshots/connection-zh-CN.png)
-
-### 单次读取
-
-选择一个点位执行“读取一次”，显示当前值、质量和服务器时间戳，不会自动开启定时刷新。
-
-![DComEasy OPC DA 单次读取](assets/screenshots/single-read-zh-CN.png)
-
-### 批量定时刷新
-
-勾选多个点位后，可以统一设置刷新间隔。下图中两个点位均按 5 秒间隔刷新。
-
-![DComEasy OPC DA 批量定时刷新](assets/screenshots/batch-refresh-5s-zh-CN.png)
-
 ## 系统要求
 
 - 支持 64 位 Windows；DComEasy 以 32 位进程运行，以兼容 OPC DA 及相关 COM 组件。
