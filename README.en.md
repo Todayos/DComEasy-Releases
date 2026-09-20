@@ -62,12 +62,6 @@ Select multiple points and apply one polling interval to all of them. Both point
 
 ![DComEasy OPC DA batch scheduled polling](assets/screenshots/batch-refresh-5s-en-US.png)
 
-## Getting started
-
-All features are available after installation, without an account, activation code, or online verification.
-
-Configuration, user creation, component installation and repair, continuous and batch monitoring, firewall rules, and watermark-free PDF / HTML reports are available directly, including in offline environments.
-
 ## Requirements
 
 - Supports 64-bit Windows. DComEasy runs as a 32-bit process for compatibility with OPC DA and related COM components.
@@ -92,7 +86,7 @@ Search the [existing issues](https://github.com/Todayos/DComEasy-Releases/issues
 - [Report a bug](https://github.com/Todayos/DComEasy-Releases/issues/new?template=bug_report.yml)
 - [Request a feature](https://github.com/Todayos/DComEasy-Releases/issues/new?template=feature_request.yml)
 
-Include the DComEasy version, Windows version, reproduction steps, expected result, and actual result. Remove account names, host names, IP addresses, and other sensitive information from screenshots and logs. Never submit passwords or activation codes.
+Include the DComEasy version, Windows version, reproduction steps, expected result, and actual result. Remove account names, host names, IP addresses, and other sensitive information from screenshots and logs. Never submit passwords.
 
 ## Copyright and license
 

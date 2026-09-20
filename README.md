@@ -62,12 +62,6 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ![DComEasy OPC DA 批量定时刷新](assets/screenshots/batch-refresh-5s-zh-CN.png)
 
-## 使用方式
-
-安装后即可使用全部功能，无需注册账号、申请激活码或联网验证。
-
-执行配置、用户创建、组件安装与修复、持续及批量监控、防火墙规则添加，以及无水印 PDF / HTML 报告均可直接使用。适用于离线现场环境。
-
 ## 系统要求
 
 - 支持 64 位 Windows；DComEasy 以 32 位进程运行，以兼容 OPC DA 及相关 COM 组件。
@@ -92,7 +86,7 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 - [报告问题](https://github.com/Todayos/DComEasy-Releases/issues/new?template=bug_report.yml)
 - [提出功能建议](https://github.com/Todayos/DComEasy-Releases/issues/new?template=feature_request.yml)
 
-问题报告中请提供 DComEasy 版本、Windows 版本、复现步骤、预期结果和实际结果。上传截图或日志前，请移除账号、主机名、IP 地址和其他敏感信息；请勿提交密码或激活码。
+问题报告中请提供 DComEasy 版本、Windows 版本、复现步骤、预期结果和实际结果。上传截图或日志前，请移除账号、主机名、IP 地址和其他敏感信息；请勿提交密码。
 
 ## 版权与许可
 
