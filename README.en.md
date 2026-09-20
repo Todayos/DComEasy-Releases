@@ -17,6 +17,14 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 > [!IMPORTANT]
 > DComEasy is proprietary software. This repository hosts official releases, user documentation, and issue tracking. It does not contain the product source code. By downloading or using the software, you agree to the license terms included with the release package.
 
+## See it in action
+
+Start with diagnostics, validate or create the OPC user, preview and apply configuration, then test the connection, read items, and enable batch polling. The demo uses sample data and contains no real account or server information.
+
+<p align="center">
+  <img src="assets/quick-start-en-US.gif" alt="DComEasy quick-start demo: diagnostics, user creation, configuration, connection, and monitoring" width="960">
+</p>
+
 ## Features
 
 - <img src="assets/icon-diagnosis.svg" width="20" height="20" alt=""> **Configuration diagnosis**: inspect local settings, the application user, DCOM role permissions, OPC components, and registration status.

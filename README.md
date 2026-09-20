@@ -17,6 +17,14 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 > [!IMPORTANT]
 > DComEasy 是专有软件。本仓库仅用于官方版本发布、用户文档和问题反馈，不包含产品源代码。下载或使用软件即表示你同意发布包中附带的许可条款。
 
+## 使用效果
+
+从配置诊断开始，验证或创建 OPC 用户，预览并执行配置，再测试连接、读取点位并开启批量刷新。演示使用示例数据，不包含真实账号或服务器信息。
+
+<p align="center">
+  <img src="assets/quick-start-zh-CN.gif" alt="DComEasy 快速使用演示：诊断、创建用户、执行配置、连接和监控" width="960">
+</p>
+
 ## 核心功能
 
 - <img src="assets/icon-diagnosis.svg" width="20" height="20" alt=""> **配置诊断**：查看本机基础配置、运行用户、DCOM 角色权限、OPC 组件及注册状态。
