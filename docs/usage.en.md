@@ -11,6 +11,8 @@
 
 The installer includes the required .NET runtime. Do not copy only `DComEasy.exe` from the installation directory because required components may be missing.
 
+To install a newer release, close DComEasy and run the newer installer as an administrator without uninstalling first. The directory page defaults to the current installation; keep it for an in-place upgrade or choose another empty directory. When another directory is selected, shortcuts point to the new version and files in the previous directory are not deleted. License state, logs, connection history, and user-owned files are preserved.
+
 ## Configuration diagnostics
 
 Open **Diagnostics** and select **Run Check**. DComEasy inspects local OPC DA / DCOM settings, components, permissions, and protocols. Diagnosis does not change system settings or start services.
@@ -51,9 +53,9 @@ Open **Network**, enter a host and port, and start the check. Remote checks cove
 
 You can add local TCP or UDP inbound rules in batches. A firewall rule permits traffic but does not start the service that listens on the port.
 
-## Free access and developer contact
+## Offline licensing and developer contact
 
-Version 1.0.2 provides all features without an account, activation code, online verification, or trial expiry. The sidebar Contact entry shows the GitHub address and email, available to view and copy offline.
+DComEasy 2.0.0 always uses offline licensing and does not require network access at the deployment site. An unactivated installation provides the Free edition's basic features; Pro and Enterprise features require a valid 32-character activation code. The sidebar License page shows the current status, edition comparison, and activation entry; Contact provides the GitHub address and email.
 
 ## Troubleshooting
 

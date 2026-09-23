@@ -19,10 +19,10 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ## 使用效果
 
-从配置诊断开始，验证或创建 OPC 用户，预览并执行配置，再测试连接、读取点位并开启批量刷新。演示使用示例数据，不包含真实账号或服务器信息。
+从配置诊断开始，查看授权与版本功能，验证或创建 OPC 用户，预览并执行配置，再测试连接、读取点位并开启批量刷新。演示使用示例数据，不包含真实账号、激活码或服务器信息。
 
 <p align="center">
-  <img src="assets/quick-start-zh-CN.gif" alt="DComEasy 快速使用演示：诊断、创建用户、执行配置、连接和监控" width="960">
+  <img src="assets/quick-start-zh-CN.gif" alt="DComEasy 2.0.0 快速使用演示：诊断、授权、用户验证、执行配置、连接和监控" width="960">
 </p>
 
 ## 核心功能
@@ -38,6 +38,18 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **诊断报告**：导出 PDF 或 HTML，便于现场交付、问题排查和归档。
 - <img src="assets/icon-language.svg" width="20" height="20" alt=""> **双语界面**：支持简体中文与英文，可在侧栏切换并保留选择。
 
+## 离线授权
+
+客户端始终启用离线授权体系，不依赖官网或现场联网。所有正式发布版本都使用该授权体系；未激活时为 Free 基础版，输入有效激活码后按授权类型启用 Pro 或企业版功能。
+
+| 类型 | 激活要求 | 当前功能范围 |
+|---|---|---|
+| Free | 无激活码，客户端默认状态 | 配置诊断、用户验证、变更预览、OPC 基础连接／浏览／单点读取、网络状态检查、历史与日志；PDF 带 Free 水印 |
+| Pro | 32 位 Pro 激活码 | 全部功能，PDF／HTML 报告无水印 |
+| Enterprise | 32 位企业版激活码 | 当前与 Pro 相同，但使用独立权限集合，便于后续分别调整 |
+
+激活码由 8 组、每组 4 个字符组成，并包含授权类型、唯一授权编号、首次激活截止日期、可选的使用到期日期及申请信息摘要。首次激活截止日期只限制新设备首次激活；已激活设备继续按照使用到期日期校验。
+
 ## 系统要求
 
 - 支持 64 位 Windows；DComEasy 以 32 位进程运行，以兼容 OPC DA 及相关 COM 组件。
@@ -47,11 +59,27 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ## 下载与安装
 
-1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases) 下载最新的 `DComEasy-Setup-v1.0.2.exe`。
+1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases) 下载最新的 `DComEasy-Setup-v2.0.0.exe`。
 2. 以管理员身份运行安装程序。
 3. 从开始菜单启动 DComEasy，并按提示以管理员身份运行。
 
+安装新版时无需先卸载旧版。关闭 DComEasy 后，以管理员身份运行新版安装包；目录页默认显示原安装位置，保留该目录即可原地升级，也可选择其他空目录。授权状态、日志、连接历史和用户自有文件会保留。
+
 安装包来自本仓库的 GitHub Releases。请勿从不明来源下载安装包，也不要只复制安装目录中的单个 EXE 文件。
+
+下载后可在 PowerShell 中校验安装包完整性：
+
+```powershell
+Get-FileHash .\DComEasy-Setup-v2.0.0.exe -Algorithm SHA256
+```
+
+当前正式安装包的 SHA-256 应为：
+
+```text
+4b968bfab03ea6c45d2fe4c1331e138e623a0f36d3dab076015915b5cc498a72
+```
+
+公开 SHA-256 不会泄露源码、授权密钥或激活码生成方法，它只用于确认文件未损坏或被替换。SHA-256 本身不能独立证明发布者身份；如果安装包和校验值同时被替换，比较仍可能通过，因此请只从本仓库的正式 Release 下载。安装包重新构建后校验值会变化，应以对应 Release 公布的值为准。
 
 更详细的操作步骤见[使用指南](docs/usage.md)。
 
@@ -68,4 +96,4 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 Copyright © 2026 Todayos. All rights reserved.
 
-DComEasy 为专有软件。允许安装和使用，包括工作场景；本仓库公开可见不代表授予源码修改、转售或再分发权利。软件的具体使用条件以发布包中附带的许可条款为准；第三方组件适用其各自的许可条款。
+DComEasy 为专有软件。所有正式发布版本均启用离线授权机制；未激活时仅提供 Free 基础功能，Pro 和企业版功能必须使用有效激活码。本仓库公开可见不代表授予源码修改、转售或再分发权利。软件的具体使用条件以发布包中附带的许可条款为准；第三方组件适用其各自的许可条款。
