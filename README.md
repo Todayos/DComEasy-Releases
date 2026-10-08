@@ -93,8 +93,6 @@ Get-FileHash .\DComEasy-Setup-v2.0.0.exe -Algorithm SHA256
 
 微信号：`North797`（添加时请备注「DComEasy」）
 
-如果二维码无法识别，请发送邮件至 [wangzd1618@gmail.com](mailto:wangzd1618@gmail.com)。
-
 ## 问题反馈
 
 提交问题前请先搜索[现有 Issues](https://github.com/Todayos/DComEasy-Releases/issues)。如果没有相同问题，请使用对应模板提交：
@@ -102,7 +100,11 @@ Get-FileHash .\DComEasy-Setup-v2.0.0.exe -Algorithm SHA256
 - [报告问题](https://github.com/Todayos/DComEasy-Releases/issues/new?template=bug_report.yml)
 - [提出功能建议](https://github.com/Todayos/DComEasy-Releases/issues/new?template=feature_request.yml)
 
-问题报告中请提供 DComEasy 版本、Windows 版本、复现步骤、预期结果和实际结果。上传截图或日志前，请移除账号、主机名、IP 地址和其他敏感信息；请勿提交密码。
+> [!TIP]
+> 提交问题时，请提供 DComEasy 版本、Windows 版本、复现步骤、预期结果和实际结果。
+
+> [!WARNING]
+> 上传截图或日志前，请移除账号、主机名、IP 地址和其他敏感信息。请勿提交密码。
 
 ## 版权与许可
 
