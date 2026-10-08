@@ -83,6 +83,18 @@ Get-FileHash .\DComEasy-Setup-v2.0.0.exe -Algorithm SHA256
 
 更详细的操作步骤见[使用指南](docs/usage.md)。
 
+## 加入内测交流群
+
+扫描下方二维码添加微信，备注「DComEasy」，即可受邀加入 DComEasy 内测交流群。
+
+<p align="center">
+  <img src="assets/wechat-contact.jpg" alt="添加微信，加入 DComEasy 内测交流群" width="320">
+</p>
+
+微信号：`North797`（添加时请备注「DComEasy」）
+
+如果二维码无法识别，请发送邮件至 [wangzd1618@gmail.com](mailto:wangzd1618@gmail.com)。
+
 ## 问题反馈
 
 提交问题前请先搜索[现有 Issues](https://github.com/Todayos/DComEasy-Releases/issues)。如果没有相同问题，请使用对应模板提交：
