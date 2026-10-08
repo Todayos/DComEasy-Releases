@@ -14,6 +14,9 @@
 
 DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for industrial deployment, commissioning, and maintenance. It brings environment diagnostics, DCOM permission configuration, OPC DA connection testing, point monitoring, network checks, and diagnostic reports into one interface.
 
+> [!TIP]
+> **Fully offline**: DComEasy installation, licensing, and all local features work without an internet connection.
+
 > [!IMPORTANT]
 > DComEasy is proprietary software. This repository hosts official releases, user documentation, and issue tracking. It does not contain the product source code. By downloading or using the software, you agree to the license terms included with the release package.
 
