@@ -83,12 +83,12 @@ Get-FileHash .\DComEasy-Setup-v2.0.0.exe -Algorithm SHA256
 
 更详细的操作步骤见[使用指南](docs/usage.md)。
 
-## 加入内测交流群
+## 加入产品技术交流群
 
-扫描下方二维码添加微信，备注「DComEasy」，即可受邀加入 DComEasy 内测交流群。
+扫描下方二维码添加微信，备注「DComEasy」，即可受邀加入 DComEasy 产品技术交流群。
 
 <p align="center">
-  <img src="assets/wechat-contact.jpg" alt="添加微信，加入 DComEasy 内测交流群" width="320">
+  <img src="assets/wechat-contact.jpg" alt="添加微信，加入 DComEasy 产品技术交流群" width="320">
 </p>
 
 微信号：`North797`（添加时请备注「DComEasy」）
