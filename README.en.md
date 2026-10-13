@@ -22,10 +22,10 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 
 ## See it in action
 
-Start with diagnostics, review licensing and edition features, validate or create the OPC user, preview and apply configuration, then test the connection, read items, and enable batch polling. The demo uses sample data and contains no real account, activation code, or server information.
+Start with diagnostics, review licensing and edition features, validate or create the OPC user, preview and apply configuration, then test the connection and view multi-tag monitoring and live trends. The demo uses sample data and contains no real account, activation code, or server information.
 
 <p align="center">
-  <img src="assets/quick-start-en-US.gif" alt="DComEasy 2.0.0 quick-start demo: diagnostics, licensing, user validation, configuration, connection, and monitoring" width="960">
+  <img src="assets/quick-start-en-US.gif" alt="DComEasy 2.0.1 quick-start demo: diagnostics, licensing, configuration, connection, multi-tag monitoring, and trends" width="960">
 </p>
 
 ## Features
@@ -33,9 +33,11 @@ Start with diagnostics, review licensing and edition features, validate or creat
 - <img src="assets/icon-diagnosis.svg" width="20" height="20" alt=""> **Configuration diagnosis**: inspect local settings, the application user, DCOM role permissions, OPC components, and registration status.
 - <img src="assets/icon-users.svg" width="20" height="20" alt=""> **User management**: validate or create a local OPC user without overwriting or resetting an existing user's password.
 - <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Configuration management**: adjust DCOM permissions, the default authentication level, and protocol order; preview changes independently, then apply them after confirmation.
+- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Configuration templates**: Pro and Enterprise can export configuration and user credentials to an encrypted `.dc` file for review and application on another computer.
 - <img src="assets/icon-components.svg" width="20" height="20" alt=""> **Component deployment**: install or repair the OPC runtime environment as needed and ensure OPCEnum and the automation components are available.
-- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Connection testing**: test directly without running diagnosis or applying configuration first. Supports ProgID / CLSID and reports network checks, failure stages, error codes, and original errors.
+- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Server discovery and connection testing**: discover registered OPC DA servers on this or a target host with the configured OPC user, or enter a ProgID / CLSID manually. Review network checks, failure stages, error codes, and original errors.
 - <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Browsing and monitoring**: expand branches on demand, query full ItemIDs, read once, or set individual and batch polling intervals; inspect values, quality, timestamps, and read errors.
+- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Monitoring tasks**: create a task before adding tags, and refresh the task list to reconcile disk changes. Preview live trends without starting detection; after configuring a complete numeric trigger rule, collect tags in batches at one interval and archive event-window PDF and CSV reports.
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Connection history**: retain successful and failed attempts, restore recent target inputs after restart, and restore or delete records from the context menu without losing the scroll position. Passwords are excluded.
 - <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Network tools**: remote checks show target connectivity only; local checks also show local listeners and firewall rules. Add local inbound TCP / UDP port rules in batches.
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Diagnostic reports**: export PDF or HTML for troubleshooting, handover, and archiving.
@@ -53,6 +55,16 @@ The client always uses offline licensing and does not require a website or an in
 
 An activation code contains eight groups of four characters and carries the edition, a unique license ID, a first-activation deadline, an optional usage expiry date, and an application-identity digest. The first-activation deadline restricts only activation on new devices; an activated device continues to use the separate usage-expiry rule.
 
+### Complimentary Pro activation codes
+
+These three codes are free to use. Both the first-activation deadline and usage expiry date are **2026-12-31**.
+
+| License ID | Activation code |
+|---|---|
+| PRO-0000001569 | `444Z-R2FW-0000-C89X-PKHP-CS53-SPVC-AZPB` |
+| PRO-0000001570 | `444Z-R2FW-0000-C8HX-PKHP-CS5E-N5J3-WRAR` |
+| PRO-0000001571 | `444Z-R2FW-0000-C8SX-PKHP-CS0H-PFFT-90ZP` |
+
 ## Requirements
 
 - Supports 64-bit Windows. DComEasy runs as a 32-bit process for compatibility with OPC DA and related COM components.
@@ -62,7 +74,7 @@ An activation code contains eight groups of four characters and carries the edit
 
 ## Download and installation
 
-1. Download the latest `DComEasy-Setup-v2.0.0.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
+1. Download the latest `DComEasy-Setup-v2.0.1.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
 2. Run the installer as an administrator.
 3. Start DComEasy from the Start menu and run it with administrator privileges when prompted.
 
@@ -73,13 +85,13 @@ Use installers published through this repository's GitHub Releases. Do not downl
 After downloading, verify the installer's integrity in PowerShell:
 
 ```powershell
-Get-FileHash .\DComEasy-Setup-v2.0.0.exe -Algorithm SHA256
+Get-FileHash .\DComEasy-Setup-v2.0.1.exe -Algorithm SHA256
 ```
 
 The current official installer should produce:
 
 ```text
-4b968bfab03ea6c45d2fe4c1331e138e623a0f36d3dab076015915b5cc498a72
+c57a5bca3bba94010f6932adb12709a9212d1ad904192f1760c1dbb9e1867447
 ```
 
 Publishing a SHA-256 checksum does not expose source code, licensing keys, or the activation-code generation method. It only helps confirm that a file was not damaged or replaced. A checksum alone does not authenticate the publisher: if both the installer and published checksum are replaced, the comparison can still pass. Download only from this repository's official Releases. Rebuilding an installer changes its checksum, so use the value published for the corresponding release.

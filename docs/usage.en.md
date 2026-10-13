@@ -47,6 +47,14 @@ After connecting, expand the OPC node tree or query a full ItemID. Add points to
 
 Points and polling settings remain only in the current target session.
 
+## Multi-tag monitoring tasks and reports
+
+Open **Monitoring tasks** to create a task with only a name, then use its row-level **Configure** action to add tags. Select multiple tags from the connected server tree, or add them from the node browser or monitoring list. Tasks reuse the configured OPC connection and user. Refresh the task list at the upper right to reconcile task records changed on disk.
+
+After adding tags, open the row's trend action to view live trends for every tag. This preview works even when detection has not started or no trigger rule is set: it collects samples while the window is open, stops temporary collection when closed, and never generates a report. The default visible range is one minute; it can be changed to at most five minutes.
+
+Starting detection requires at least one tag, a trigger tag, a numeric comparison and threshold, and a writable report folder. The sampling interval is 1–3600 seconds; all tags in a task are read in batches at one interval. The pre- and post-trigger windows default to 30 seconds each. A valid matching sample from the trigger tag creates an event; another event is allowed after recovery. Each event archives a PDF with all task tags and a CSV of the samples. Running tasks are view-only; stop before editing. A new start records a new task start time.
+
 ## Network diagnostics
 
 Open **Network**, enter a host and port, and start the check. Remote checks cover host resolution, Ping, and the target TCP port. Local checks also show listeners and a summary of matching firewall rules.
@@ -55,7 +63,7 @@ You can add local TCP or UDP inbound rules in batches. A firewall rule permits t
 
 ## Offline licensing and developer contact
 
-DComEasy 2.0.0 always uses offline licensing and does not require network access at the deployment site. An unactivated installation provides the Free edition's basic features; Pro and Enterprise features require a valid 32-character activation code. The sidebar License page shows the current status, edition comparison, and activation entry; Contact provides the GitHub address and email.
+DComEasy 2.0.1 always uses offline licensing and does not require network access at the deployment site. An unactivated installation provides the Free edition's basic features; Pro and Enterprise features require a valid 32-character activation code. The sidebar License page shows the current status, edition comparison, and activation entry; Contact provides the GitHub address and email.
 
 ## Troubleshooting
 
