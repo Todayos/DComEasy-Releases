@@ -22,10 +22,10 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 
 ## See it in action
 
-Start with diagnostics, review licensing and edition features, validate or create the OPC user, preview and apply configuration, then test the connection and view multi-tag monitoring and live trends. The demo uses sample data and contains no real account, activation code, or server information.
+Start with diagnostics and licensing, configure the OPC user, test a connection and browse tags, then view multi-tag monitoring tasks and live trends. The demo uses sample data and contains no real account, activation code, or server information.
 
 <p align="center">
-  <img src="assets/quick-start-en-US.gif" alt="DComEasy 2.0.1 quick-start demo: diagnostics, licensing, configuration, connection, multi-tag monitoring, and trends" width="960">
+  <img src="assets/quick-start-v2.0.1-en-US.gif" alt="DComEasy 2.0.1 quick-start demo: diagnostics, licensing, configuration, connection, monitoring tasks, and trends" width="960">
 </p>
 
 ## Features
