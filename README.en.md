@@ -28,15 +28,25 @@ Start with diagnostics and licensing, configure the OPC user, test a connection 
   <img src="assets/quick-start-v2.0.1-en-US.gif" alt="DComEasy 2.0.1 quick-start demo: diagnostics, licensing, configuration, connection, monitoring tasks, and trends" width="960">
 </p>
 
+This demo was recorded with 2.0.1; the 2.0.2 installer contains the updated user management interface.
+
+## What changed in v2.0.2
+
+- OPC credentials are validated automatically. The **Manage user** menu keeps Create user, Delete local account, and Clear credentials together; Create user is enabled only after a missing account is confirmed.
+- New local OPC accounts use non-expiring passwords. A bundled script can inspect and repair accounts created by older DComEasy releases without deleting them or changing their passwords.
+- Boolean values appear as `0/1` in the monitoring list and trends. The user menu highlights the full row on hover.
+
+[Read the full release notes](RELEASE_NOTES-v2.0.2.en.md).
+
 ## Features
 
 - <img src="assets/icon-diagnosis.svg" width="20" height="20" alt=""> **Configuration diagnosis**: inspect local settings, the application user, DCOM role permissions, OPC components, and registration status.
-- <img src="assets/icon-users.svg" width="20" height="20" alt=""> **User management**: validate or create a local OPC user without overwriting or resetting an existing user's password.
+- <img src="assets/icon-users.svg" width="20" height="20" alt=""> **User management**: validate OPC credentials automatically, then create or delete a managed local account or clear credentials from one menu, without overwriting or resetting an existing user's password.
 - <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Configuration management**: adjust DCOM permissions, the default authentication level, and protocol order; preview changes independently, then apply them after confirmation.
 - <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Configuration templates**: Pro and Enterprise can export configuration and user credentials to an encrypted `.dc` file for review and application on another computer.
 - <img src="assets/icon-components.svg" width="20" height="20" alt=""> **Component deployment**: install or repair the OPC runtime environment as needed and ensure OPCEnum and the automation components are available.
 - <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Server discovery and connection testing**: discover registered OPC DA servers on this or a target host with the configured OPC user, or enter a ProgID / CLSID manually. Review network checks, failure stages, error codes, and original errors.
-- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Browsing and monitoring**: expand branches on demand, query full ItemIDs, read once, or set individual and batch polling intervals; inspect values, quality, timestamps, and read errors.
+- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Browsing and monitoring**: expand branches on demand, query full ItemIDs, read once, or set individual and batch polling intervals; inspect values, quality, timestamps, and read errors. Boolean values display as `0/1`.
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Monitoring tasks**: create a task before adding tags, and refresh the task list to reconcile disk changes. Preview live trends without starting detection; after configuring a complete numeric trigger rule, collect tags in batches at one interval and archive event-window PDF and CSV reports.
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Connection history**: retain successful and failed attempts, restore recent target inputs after restart, and restore or delete records from the context menu without losing the scroll position. Passwords are excluded.
 - <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Network tools**: remote checks show target connectivity only; local checks also show local listeners and firewall rules. Add local inbound TCP / UDP port rules in batches.
@@ -74,7 +84,7 @@ These three codes are free to use. Both the first-activation deadline and usage 
 
 ## Download and installation
 
-1. Download the latest `DComEasy-Setup-v2.0.1.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
+1. Download the latest `DComEasy-Setup-v2.0.2.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
 2. Run the installer as an administrator.
 3. Start DComEasy from the Start menu and run it with administrator privileges when prompted.
 
@@ -85,13 +95,13 @@ Use installers published through this repository's GitHub Releases. Do not downl
 After downloading, verify the installer's integrity in PowerShell:
 
 ```powershell
-Get-FileHash .\DComEasy-Setup-v2.0.1.exe -Algorithm SHA256
+Get-FileHash .\DComEasy-Setup-v2.0.2.exe -Algorithm SHA256
 ```
 
 The current official installer should produce:
 
 ```text
-c57a5bca3bba94010f6932adb12709a9212d1ad904192f1760c1dbb9e1867447
+4878c15752cac27f6594dcda3fb9f4b081547b617bb86afead84d6440ff5512a
 ```
 
 Publishing a SHA-256 checksum does not expose source code, licensing keys, or the activation-code generation method. It only helps confirm that a file was not damaged or replaced. A checksum alone does not authenticate the publisher: if both the installer and published checksum are replaced, the comparison can still pass. Download only from this repository's official Releases. Rebuilding an installer changes its checksum, so use the value published for the corresponding release.

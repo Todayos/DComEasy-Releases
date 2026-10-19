@@ -19,11 +19,19 @@ Open **Diagnostics** and select **Run Check**. DComEasy inspects local OPC DA / 
 
 Each result includes its status and guidance. After diagnosis, export a watermark-free PDF or standalone HTML report for archiving.
 
+## OPC credentials and local accounts
+
+Enter a local OPC username and password on **Configuration**. Validation runs automatically when you leave the fields or press Enter in the password field. The status icon shows the result and can be clicked to retry. Right-click the status text to view or copy the full diagnostic. An existing account's password is never overwritten or reset.
+
+The **Manage user ▾** menu always shows **Create user**, **Delete local account…**, and **Clear credentials**. Create user is enabled only after validation confirms that the account is missing; new accounts have passwords that never expire. Clear credentials removes only the inputs and saved credentials. Delete local account applies only to local OPC accounts created by DComEasy and confirms the account name and SID. Recreating an account assigns a new SID, so DCOM permissions may need to be configured again.
+
+For an account created by an older DComEasy release that is affected by password expiry, open PowerShell as administrator in the installation directory and run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\Repair-DComEasyOpcUser.ps1 -UserName <account>` to inspect it, then add `-Apply` to repair it. The script accepts only marked DComEasy local accounts and preserves the account and password.
+
 ## Apply configuration
 
 Open **Configuration**, then:
 
-1. Enter and validate the OPC user. You can create a local user when required.
+1. Enter the OPC user and wait for automatic validation. To create a missing local account, select **Create user** from **Manage user ▾**.
 2. Select the authentication level, protocols, and DCOM permissions needed for the target environment.
 3. Preview the proposed changes.
 4. Apply the configuration after reviewing every change, then inspect each result.
@@ -45,7 +53,7 @@ Successful and failed attempts are stored in connection history without password
 
 After connecting, expand the OPC node tree or query a full ItemID. Add points to the monitoring list and use the context menu to read once, configure a 1–3600 second polling interval, apply batch polling, stop monitoring, remove points, or copy values and errors.
 
-Points and polling settings remain only in the current target session.
+Boolean switch values display as `0/1` in the monitoring list and trends; a value actually returned as empty stays empty. Points and polling settings remain only in the current target session.
 
 ## Multi-tag monitoring tasks and reports
 
@@ -63,7 +71,7 @@ You can add local TCP or UDP inbound rules in batches. A firewall rule permits t
 
 ## Offline licensing and developer contact
 
-DComEasy 2.0.1 always uses offline licensing and does not require network access at the deployment site. An unactivated installation provides the Free edition's basic features; Pro and Enterprise features require a valid 32-character activation code. The sidebar License page shows the current status, edition comparison, and activation entry; Contact provides the GitHub address and email.
+DComEasy 2.0.2 always uses offline licensing and does not require network access at the deployment site. An unactivated installation provides the Free edition's basic features; Pro and Enterprise features require a valid 32-character activation code. The sidebar License page shows the current status, edition comparison, and activation entry; Contact provides the GitHub address and email.
 
 ## Troubleshooting
 
