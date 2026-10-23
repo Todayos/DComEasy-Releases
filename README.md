@@ -25,18 +25,19 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 从配置诊断开始，查看授权、配置 OPC 用户，测试连接并浏览节点，最后查看多点监测任务和实时趋势。演示使用示例数据，不包含真实账号、激活码或服务器信息。
 
 <p align="center">
-  <img src="assets/quick-start-v2.0.1-zh-CN.gif" alt="DComEasy 2.0.1 快速使用演示：诊断、授权、配置、连接、监测任务和趋势" width="960">
+  <img src="assets/quick-start-v2.0.3-zh-CN.gif" alt="DComEasy 2.0.3 快速使用演示：诊断、授权、配置、连接、监测任务和趋势" width="960">
 </p>
 
-演示动图录制于 2.0.1；2.0.2 的用户管理界面以新版安装包为准。
+[观看 2.0.3 使用短片（MP4，18 秒）](https://github.com/Todayos/DComEasy-Releases/releases/download/v2.0.3/quick-start-v2.0.3-zh-CN.mp4)
 
-## v2.0.2 更新
+## v2.0.3 更新
 
-- OPC 用户凭据改为自动验证；“用户管理”菜单集中放置创建、删除本地账户和清除凭据，创建入口始终可见，仅在确认用户不存在时可用。
-- 新建 OPC 本地账户的密码设为永不过期；旧版 DComEasy 创建的账户可用随包脚本检查并修复到期设置，无需删除账户或修改密码。
-- 开关量在监控列表和趋势图中按 `0/1` 显示；改进用户管理菜单的整行悬停反馈。
+- 简化英文菜单和模板标签，调整按钮布局、弹窗滚动与边距。
+- 连接失败直接在“连接测试”给出原因和处理建议；完整技术详情在连接历史中按行展示。
+- 本机检测结论与 OPCEnum 配置资料分开呈现，报告同步区分，不把配置读取等同于远程连接通过。
+- 更新中英文使用短片和使用指南，展示当前版本界面。
 
-[查看完整更新说明](RELEASE_NOTES-v2.0.2.md)。
+[查看完整更新说明](RELEASE_NOTES-v2.0.3.md)。
 
 ## 核心功能
 
@@ -45,7 +46,7 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 - <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **执行配置**：按需调整 DCOM 权限、默认身份验证级别和协议顺序；可独立预览变更，确认后再执行。
 - <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **配置模板**：Pro 与企业版可将配置及用户凭据加密导出为 `.dc`，在另一台电脑导入、复核、预览后执行。
 - <img src="assets/icon-components.svg" width="20" height="20" alt=""> **组件部署**：按需安装或修复 OPC 运行环境，确保 OPCEnum 和自动化组件可用。
-- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **服务器发现与连接测试**：使用指定 OPC 用户发现本机或目标主机已注册的 OPC DA 服务器，也可手动填写 ProgID / CLSID；显示网络检查、失败阶段、错误码和原始错误。
+- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **服务器发现与连接测试**：使用指定 OPC 用户发现本机或目标主机已注册的 OPC DA 服务器，也可手动填写 ProgID / CLSID；失败时先显示原因与处理建议，网络检查、失败阶段、错误码和原始错误保留在连接历史中。
 - <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **节点与监控**：分层展开目录、按完整 ItemID 查询；右键读取一次、设置单点或批量刷新间隔，显示值、质量、时间戳和读取错误；布尔值显示为 `0/1`。
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **监测任务**：可先创建空任务，再批量添加点位；手动刷新任务列表可同步磁盘变化。独立打开实时趋势无需启动任务；配置完整阈值规则后启动，按统一周期批量采样并将触发窗口的 PDF 与 CSV 自动归档。
 - <img src="assets/icon-report.svg" width="20" height="20" alt=""> **连接历史**：保存成功与失败记录，重启后回显最近的目标参数；右键回填或删除记录，删除保留滚动位置，历史不保存密码。
@@ -84,7 +85,7 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ## 下载与安装
 
-1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases) 下载最新的 `DComEasy-Setup-v2.0.2.exe`。
+1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases) 下载最新的 `DComEasy-Setup-v2.0.3.exe`。
 2. 以管理员身份运行安装程序。
 3. 从开始菜单启动 DComEasy，并按提示以管理员身份运行。
 
@@ -95,13 +96,13 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 下载后可在 PowerShell 中校验安装包完整性：
 
 ```powershell
-Get-FileHash .\DComEasy-Setup-v2.0.2.exe -Algorithm SHA256
+Get-FileHash .\DComEasy-Setup-v2.0.3.exe -Algorithm SHA256
 ```
 
 当前正式安装包的 SHA-256 应为：
 
 ```text
-4878c15752cac27f6594dcda3fb9f4b081547b617bb86afead84d6440ff5512a
+be5fd10e5799969e19cc9d39bf9cf08095263cef4ac5b55c256334f384f4b6cb
 ```
 
 公开 SHA-256 不会泄露源码、授权密钥或激活码生成方法，它只用于确认文件未损坏或被替换。SHA-256 本身不能独立证明发布者身份；如果安装包和校验值同时被替换，比较仍可能通过，因此请只从本仓库的正式 Release 下载。安装包重新构建后校验值会变化，应以对应 Release 公布的值为准。
