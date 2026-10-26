@@ -25,18 +25,8 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 从配置诊断开始，查看授权、配置 OPC 用户，测试连接并浏览节点，最后查看多点监测任务和实时趋势。演示使用示例数据，不包含真实账号、激活码或服务器信息。
 
 <p align="center">
-  <img src="assets/quick-start-v2.0.4-zh-CN.gif" alt="DComEasy 2.0.4 快速使用演示：诊断、授权、配置、连接、监测任务和趋势" width="960">
+  <img src="assets/quick-start-zh-CN.gif" alt="DComEasy 快速使用演示：诊断、授权、配置、连接、监测任务和趋势" width="960">
 </p>
-
-## v2.0.4 更新
-
-- 修正 DCOM 默认协议读写，改进配置失败回滚及 DLL 注册取消处理。
-- 恢复未登记的监测快照，跳过并报告损坏索引，支持中断报告重试。
-- 修复退出过程的重复确认，避免清理完成后留下不可用窗口。
-- 修复极端数值趋势显示及正常采样抖动造成的窗口不足误报。
-- 重新制作 2.0.4 中英文演示视频、动图并更新使用指南。
-
-[查看完整更新说明](RELEASE_NOTES-v2.0.4.md)。
 
 ## 核心功能
 
@@ -84,7 +74,7 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 ## 下载与安装
 
-1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases) 下载最新的 `DComEasy-Setup-v2.0.4.exe`。
+1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest) 下载官方安装包。
 2. 以管理员身份运行安装程序。
 3. 从开始菜单启动 DComEasy，并按提示以管理员身份运行。
 
@@ -92,17 +82,7 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
 
 安装包来自本仓库的 GitHub Releases。请勿从不明来源下载安装包，也不要只复制安装目录中的单个 EXE 文件。
 
-下载后可在 PowerShell 中校验安装包完整性：
-
-```powershell
-Get-FileHash .\DComEasy-Setup-v2.0.4.exe -Algorithm SHA256
-```
-
-当前正式安装包的 SHA-256 应为：
-
-```text
-6fa756a130fcf788c855ec1966570cb51cdf77470300cee0520da171a7b4b66c
-```
+安装包及其对应的 SHA-256 校验值请查看[官方 Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest)。
 
 公开 SHA-256 不会泄露源码、授权密钥或激活码生成方法，它只用于确认文件未损坏或被替换。SHA-256 本身不能独立证明发布者身份；如果安装包和校验值同时被替换，比较仍可能通过，因此请只从本仓库的正式 Release 下载。安装包重新构建后校验值会变化，应以对应 Release 公布的值为准。
 
