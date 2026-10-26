@@ -25,19 +25,20 @@ DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for indust
 Start with diagnostics and licensing, configure the OPC user, test a connection and browse tags, then view multi-tag monitoring tasks and live trends. The demo uses sample data and contains no real account, activation code, or server information.
 
 <p align="center">
-  <img src="assets/quick-start-v2.0.3-en-US.gif" alt="DComEasy 2.0.3 quick-start demo: diagnostics, licensing, configuration, connection, monitoring tasks, and trends" width="960">
+  <img src="assets/quick-start-v2.0.4-en-US.gif" alt="DComEasy 2.0.4 quick-start demo: diagnostics, licensing, configuration, connection, monitoring tasks, and trends" width="960">
 </p>
 
-[Watch the 2.0.3 walkthrough (MP4, 18 seconds)](https://github.com/Todayos/DComEasy-Releases/releases/download/v2.0.3/quick-start-v2.0.3-en-US.mp4)
+[Watch the 2.0.4 walkthrough (MP4, 18 seconds)](https://github.com/Todayos/DComEasy-Releases/releases/download/v2.0.4/quick-start-v2.0.4-en-US.mp4)
 
-## What changed in v2.0.3
+## What changed in v2.0.4
 
-- Shorter English menu and template labels, improved button layouts, dialog scrolling and spacing.
-- Connection failures show causes and next steps directly on Connection; full technical details remain in history with preserved line breaks.
-- Local check results and OPCEnum configuration reference are separated on screen and in reports. Reading settings is not proof of remote connectivity.
-- Refreshed Chinese and English walkthroughs and guides using the current interface.
+- Correct default DCOM protocol storage, configuration rollback, and cancellation of DLL registration.
+- Recover unindexed monitoring snapshots, report damaged indexes without blocking other records, and retry interrupted reports.
+- Remove duplicate exit confirmation and prevent an unusable window after monitoring cleanup.
+- Fix extreme-value trend rendering and incomplete-window warnings caused by normal sampling jitter.
+- Newly captured 2.0.4 Chinese and English walkthrough videos, GIFs, and updated guides.
 
-[Read the full release notes](RELEASE_NOTES-v2.0.3.en.md).
+[Read the full release notes](RELEASE_NOTES-v2.0.4.en.md).
 
 ## Features
 
@@ -85,7 +86,7 @@ These three codes are free to use. Both the first-activation deadline and usage 
 
 ## Download and installation
 
-1. Download the latest `DComEasy-Setup-v2.0.3.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
+1. Download the latest `DComEasy-Setup-v2.0.4.exe` from [Releases](https://github.com/Todayos/DComEasy-Releases/releases).
 2. Run the installer as an administrator.
 3. Start DComEasy from the Start menu and run it with administrator privileges when prompted.
 
@@ -96,13 +97,13 @@ Use installers published through this repository's GitHub Releases. Do not downl
 After downloading, verify the installer's integrity in PowerShell:
 
 ```powershell
-Get-FileHash .\DComEasy-Setup-v2.0.3.exe -Algorithm SHA256
+Get-FileHash .\DComEasy-Setup-v2.0.4.exe -Algorithm SHA256
 ```
 
 The current official installer should produce:
 
 ```text
-be5fd10e5799969e19cc9d39bf9cf08095263cef4ac5b55c256334f384f4b6cb
+6fa756a130fcf788c855ec1966570cb51cdf77470300cee0520da171a7b4b66c
 ```
 
 Publishing a SHA-256 checksum does not expose source code, licensing keys, or the activation-code generation method. It only helps confirm that a file was not damaged or replaced. A checksum alone does not authenticate the publisher: if both the installer and published checksum are replaced, the comparison can still pass. Download only from this repository's official Releases. Rebuilding an installer changes its checksum, so use the value published for the corresponding release.
