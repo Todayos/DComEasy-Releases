@@ -28,8 +28,6 @@ Start with diagnostics and licensing, configure the OPC user, test a connection 
   <img src="assets/quick-start-v2.0.4-en-US.gif" alt="DComEasy 2.0.4 quick-start demo: diagnostics, licensing, configuration, connection, monitoring tasks, and trends" width="960">
 </p>
 
-[Watch the 2.0.4 walkthrough (MP4, 18 seconds)](https://github.com/Todayos/DComEasy-Releases/releases/download/v2.0.4/quick-start-v2.0.4-en-US.mp4)
-
 ## What changed in v2.0.4
 
 - Correct default DCOM protocol storage, configuration rollback, and cancellation of DLL registration.

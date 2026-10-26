@@ -25,5 +25,3 @@ Interrupted monitoring report generation can be retried. Review recovered captur
 ```text
 6fa756a130fcf788c855ec1966570cb51cdf77470300cee0520da171a7b4b66c
 ```
-
-The release includes `SHA256SUMS.txt` for the installer and both language versions of the videos and GIFs.

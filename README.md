@@ -28,8 +28,6 @@ DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 
   <img src="assets/quick-start-v2.0.4-zh-CN.gif" alt="DComEasy 2.0.4 快速使用演示：诊断、授权、配置、连接、监测任务和趋势" width="960">
 </p>
 
-[观看 2.0.4 使用短片（MP4，18 秒）](https://github.com/Todayos/DComEasy-Releases/releases/download/v2.0.4/quick-start-v2.0.4-zh-CN.mp4)
-
 ## v2.0.4 更新
 
 - 修正 DCOM 默认协议读写，改进配置失败回滚及 DLL 注册取消处理。
