@@ -3,7 +3,7 @@
 ![DComEasy — Windows OPC DA / DCOM 配置与诊断](assets/banner-zh-CN.svg)
 
 <p align="center">
-  <strong>简体中文</strong> · <a href="README.md">English</a>
+  <strong>简体中文</strong> · <a href="README.md">English</a> · <a href="README.ja.md">日本語</a>
 </p>
 
 <p align="center">
