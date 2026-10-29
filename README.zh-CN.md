@@ -1,0 +1,118 @@
+# DComEasy
+
+![DComEasy — Windows OPC DA / DCOM 配置与诊断](assets/banner-zh-CN.svg)
+
+<p align="center">
+  <strong>简体中文</strong> · <a href="README.md">English</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Todayos/DComEasy-Releases/releases/latest"><strong>下载最新版本</strong></a>
+  · <a href="docs/usage.md">使用指南</a>
+  · <a href="https://github.com/Todayos/DComEasy-Releases/issues">问题反馈</a>
+</p>
+
+DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 配置与诊断工具。它将环境诊断、DCOM 权限配置、OPC DA 连接测试、点位监控、网络检测和诊断报告集中在一个界面中。
+
+> [!TIP]
+> **完全离线使用**：DComEasy 的安装、授权及所有本地功能均无需连接互联网。
+
+> [!IMPORTANT]
+> DComEasy 是专有软件。本仓库仅用于官方版本发布、用户文档和问题反馈，不包含产品源代码。下载或使用软件即表示你同意发布包中附带的许可条款。
+
+## 使用效果
+
+从配置诊断开始，查看授权、配置 OPC 用户，测试连接并浏览节点，最后查看多点监测任务和实时趋势。演示使用示例数据，不包含真实账号、激活码或服务器信息。
+
+<p align="center">
+  <img src="assets/quick-start-zh-CN.gif" alt="DComEasy 快速使用演示：诊断、授权、配置、连接、监测任务和趋势" width="960">
+</p>
+
+## 核心功能
+
+- <img src="assets/icon-diagnosis.svg" width="20" height="20" alt=""> **配置诊断**：查看本机基础配置、运行用户、DCOM 角色权限、OPC 组件及注册状态。
+- <img src="assets/icon-users.svg" width="20" height="20" alt=""> **用户管理**：自动验证 OPC 凭据，并在“用户管理”菜单中创建、删除受管本地账户或清除凭据；已存在用户的密码不会被覆盖或重置。
+- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **执行配置**：按需调整 DCOM 权限、默认身份验证级别和协议顺序；可独立预览变更，确认后再执行。
+- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **配置模板**：Pro 与企业版可将配置及用户凭据加密导出为 `.dc`，在另一台电脑导入、复核、预览后执行。
+- <img src="assets/icon-components.svg" width="20" height="20" alt=""> **组件部署**：按需安装或修复 OPC 运行环境，确保 OPCEnum 和自动化组件可用。
+- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **服务器发现与连接测试**：使用指定 OPC 用户发现本机或目标主机已注册的 OPC DA 服务器，也可手动填写 ProgID / CLSID；失败时先显示原因与处理建议，网络检查、失败阶段、错误码和原始错误保留在连接历史中。
+- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **节点与监控**：分层展开目录、按完整 ItemID 查询；右键读取一次、设置单点或批量刷新间隔，显示值、质量、时间戳和读取错误；布尔值显示为 `0/1`。
+- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **监测任务**：可先创建空任务，再批量添加点位；手动刷新任务列表可同步磁盘变化。独立打开实时趋势无需启动任务；配置完整阈值规则后启动，按统一周期批量采样并将触发窗口的 PDF 与 CSV 自动归档。
+- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **连接历史**：保存成功与失败记录，重启后回显最近的目标参数；右键回填或删除记录，删除保留滚动位置，历史不保存密码。
+- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **网络检测**：远程目标仅显示目标连通性；检测本机时额外显示本机监听及防火墙规则。支持批量添加本机 TCP / UDP 入站端口规则。
+- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **诊断报告**：导出 PDF 或 HTML，便于现场交付、问题排查和归档。
+- <img src="assets/icon-language.svg" width="20" height="20" alt=""> **双语界面**：支持简体中文与英文，可在侧栏切换并保留选择。
+
+## 离线授权
+
+客户端始终启用离线授权体系，不依赖官网或现场联网。所有正式发布版本都使用该授权体系；未激活时为 Free 基础版，输入有效激活码后按授权类型启用 Pro 或企业版功能。
+
+| 类型 | 激活要求 | 当前功能范围 |
+|---|---|---|
+| Free | 无激活码，客户端默认状态 | 配置诊断、用户验证、变更预览、OPC 基础连接／浏览／单点读取、网络状态检查、历史与日志；PDF 带 Free 水印 |
+| Pro | 32 位 Pro 激活码 | 全部功能，PDF／HTML 报告无水印 |
+| Enterprise | 32 位企业版激活码 | 当前与 Pro 相同，但使用独立权限集合，便于后续分别调整 |
+
+激活码由 8 组、每组 4 个字符组成，并包含授权类型、唯一授权编号、首次激活截止日期、可选的使用到期日期及申请信息摘要。首次激活截止日期只限制新设备首次激活；已激活设备继续按照使用到期日期校验。
+
+### 免费 Pro 激活码
+
+以下三个激活码供用户免费使用；首次激活截止日和使用截止日均为 **2026-12-31**。
+
+| 授权编号 | 激活码 |
+|---|---|
+| PRO-0000001569 | `444Z-R2FW-0000-C89X-PKHP-CS53-SPVC-AZPB` |
+| PRO-0000001570 | `444Z-R2FW-0000-C8HX-PKHP-CS5E-N5J3-WRAR` |
+| PRO-0000001571 | `444Z-R2FW-0000-C8SX-PKHP-CS0H-PFFT-90ZP` |
+
+## 系统要求
+
+- 支持 64 位 Windows；DComEasy 以 32 位进程运行，以兼容 OPC DA 及相关 COM 组件。
+- 使用管理员权限安装和运行 DComEasy。
+- 使用完整的离线安装包；安装包已包含所需的 .NET 运行时。
+- 连接测试需要可访问的 OPC DA 服务器及该环境下有效的 OPC 用户信息。
+
+## 下载与安装
+
+1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest) 下载官方安装包。
+2. 以管理员身份运行安装程序。
+3. 从开始菜单启动 DComEasy，并按提示以管理员身份运行。
+
+安装新版时无需先卸载旧版。关闭 DComEasy 后，以管理员身份运行新版安装包；目录页默认显示原安装位置，保留该目录即可原地升级，也可选择其他空目录。授权状态、日志、连接历史和用户自有文件会保留。
+
+安装包来自本仓库的 GitHub Releases。请勿从不明来源下载安装包，也不要只复制安装目录中的单个 EXE 文件。
+
+安装包及其对应的 SHA-256 校验值请查看[官方 Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest)。
+
+公开 SHA-256 不会泄露源码、授权密钥或激活码生成方法，它只用于确认文件未损坏或被替换。SHA-256 本身不能独立证明发布者身份；如果安装包和校验值同时被替换，比较仍可能通过，因此请只从本仓库的正式 Release 下载。安装包重新构建后校验值会变化，应以对应 Release 公布的值为准。
+
+更详细的操作步骤见[使用指南](docs/usage.md)。
+
+## 加入产品技术交流群
+
+扫描下方二维码添加微信，备注「DComEasy」，即可受邀加入 DComEasy 产品技术交流群。
+
+<p align="center">
+  <img src="assets/wechat-contact.jpg" alt="添加微信，加入 DComEasy 产品技术交流群" width="320">
+</p>
+
+微信号：`North797`（添加时请备注「DComEasy」）
+
+## 问题反馈
+
+提交问题前请先搜索[现有 Issues](https://github.com/Todayos/DComEasy-Releases/issues)。如果没有相同问题，请使用对应模板提交：
+
+- [报告问题](https://github.com/Todayos/DComEasy-Releases/issues/new?template=bug_report.yml)
+- [提出功能建议](https://github.com/Todayos/DComEasy-Releases/issues/new?template=feature_request.yml)
+
+> [!TIP]
+> 提交问题时，请提供 DComEasy 版本、Windows 版本、复现步骤、预期结果和实际结果。
+
+> [!WARNING]
+> 上传截图或日志前，请移除账号、主机名、IP 地址和其他敏感信息。请勿提交密码。
+
+## 版权与许可
+
+Copyright © 2026 Todayos. All rights reserved.
+
+DComEasy 为专有软件。所有正式发布版本均启用离线授权机制；未激活时仅提供 Free 基础功能，Pro 和企业版功能必须使用有效激活码。本仓库公开可见不代表授予源码修改、转售或再分发权利。软件的具体使用条件以发布包中附带的许可条款为准；第三方组件适用其各自的许可条款。

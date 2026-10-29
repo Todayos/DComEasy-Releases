@@ -1,6 +1,6 @@
 # User guide
 
-[Project home](../README.en.md) · [简体中文](usage.md) | English · [License](licensing/LICENSE.en.txt)
+[Project home](../README.md) · [简体中文](usage.md) | English · [License](licensing/LICENSE.en.txt)
 
 ## Startup and language
 

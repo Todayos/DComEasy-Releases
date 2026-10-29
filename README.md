@@ -1,118 +1,104 @@
 # DComEasy
 
-![DComEasy — Windows OPC DA / DCOM 配置与诊断](assets/banner-zh-CN.svg)
+![DComEasy — Windows OPC DA / DCOM configuration and diagnostics](assets/banner-en.svg)
 
 <p align="center">
-  <strong>简体中文</strong> · <a href="README.en.md">English</a>
+  <a href="README.zh-CN.md">简体中文</a> · <strong>English</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Todayos/DComEasy-Releases/releases/latest"><strong>下载最新版本</strong></a>
-  · <a href="docs/usage.md">使用指南</a>
-  · <a href="https://github.com/Todayos/DComEasy-Releases/issues">问题反馈</a>
+  <a href="https://github.com/Todayos/DComEasy-Releases/releases/latest"><strong>Download the latest release</strong></a>
+  · <a href="docs/usage.en.md">User guide</a>
+  · <a href="https://github.com/Todayos/DComEasy-Releases/issues">Issue tracker</a>
 </p>
 
-DComEasy 是面向工业现场部署、调试和维护的 Windows OPC DA / DCOM 配置与诊断工具。它将环境诊断、DCOM 权限配置、OPC DA 连接测试、点位监控、网络检测和诊断报告集中在一个界面中。
+DComEasy is a Windows OPC DA / DCOM configuration and diagnostic tool for industrial deployment, commissioning, and maintenance. It brings environment diagnostics, DCOM permission configuration, OPC DA connection testing, point monitoring, network checks, and diagnostic reports into one interface.
 
 > [!TIP]
-> **完全离线使用**：DComEasy 的安装、授权及所有本地功能均无需连接互联网。
+> **Fully offline**: DComEasy installation, licensing, and all local features work without an internet connection.
 
 > [!IMPORTANT]
-> DComEasy 是专有软件。本仓库仅用于官方版本发布、用户文档和问题反馈，不包含产品源代码。下载或使用软件即表示你同意发布包中附带的许可条款。
+> DComEasy is proprietary software. This repository hosts official releases, user documentation, and issue tracking. It does not contain the product source code. By downloading or using the software, you agree to the license terms included with the release package.
 
-## 使用效果
+## See it in action
 
-从配置诊断开始，查看授权、配置 OPC 用户，测试连接并浏览节点，最后查看多点监测任务和实时趋势。演示使用示例数据，不包含真实账号、激活码或服务器信息。
+Start with diagnostics and licensing, configure the OPC user, test a connection and browse tags, then view multi-tag monitoring tasks and live trends. The demo uses sample data and contains no real account, activation code, or server information.
 
 <p align="center">
-  <img src="assets/quick-start-zh-CN.gif" alt="DComEasy 快速使用演示：诊断、授权、配置、连接、监测任务和趋势" width="960">
+  <img src="assets/quick-start-en-US.gif" alt="DComEasy quick-start demo: diagnostics, licensing, configuration, connection, monitoring tasks, and trends" width="960">
 </p>
 
-## 核心功能
+## Features
 
-- <img src="assets/icon-diagnosis.svg" width="20" height="20" alt=""> **配置诊断**：查看本机基础配置、运行用户、DCOM 角色权限、OPC 组件及注册状态。
-- <img src="assets/icon-users.svg" width="20" height="20" alt=""> **用户管理**：自动验证 OPC 凭据，并在“用户管理”菜单中创建、删除受管本地账户或清除凭据；已存在用户的密码不会被覆盖或重置。
-- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **执行配置**：按需调整 DCOM 权限、默认身份验证级别和协议顺序；可独立预览变更，确认后再执行。
-- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **配置模板**：Pro 与企业版可将配置及用户凭据加密导出为 `.dc`，在另一台电脑导入、复核、预览后执行。
-- <img src="assets/icon-components.svg" width="20" height="20" alt=""> **组件部署**：按需安装或修复 OPC 运行环境，确保 OPCEnum 和自动化组件可用。
-- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **服务器发现与连接测试**：使用指定 OPC 用户发现本机或目标主机已注册的 OPC DA 服务器，也可手动填写 ProgID / CLSID；失败时先显示原因与处理建议，网络检查、失败阶段、错误码和原始错误保留在连接历史中。
-- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **节点与监控**：分层展开目录、按完整 ItemID 查询；右键读取一次、设置单点或批量刷新间隔，显示值、质量、时间戳和读取错误；布尔值显示为 `0/1`。
-- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **监测任务**：可先创建空任务，再批量添加点位；手动刷新任务列表可同步磁盘变化。独立打开实时趋势无需启动任务；配置完整阈值规则后启动，按统一周期批量采样并将触发窗口的 PDF 与 CSV 自动归档。
-- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **连接历史**：保存成功与失败记录，重启后回显最近的目标参数；右键回填或删除记录，删除保留滚动位置，历史不保存密码。
-- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **网络检测**：远程目标仅显示目标连通性；检测本机时额外显示本机监听及防火墙规则。支持批量添加本机 TCP / UDP 入站端口规则。
-- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **诊断报告**：导出 PDF 或 HTML，便于现场交付、问题排查和归档。
-- <img src="assets/icon-language.svg" width="20" height="20" alt=""> **双语界面**：支持简体中文与英文，可在侧栏切换并保留选择。
+- <img src="assets/icon-diagnosis.svg" width="20" height="20" alt=""> **Configuration diagnosis**: inspect local settings, the application user, DCOM role permissions, OPC components, and registration status.
+- <img src="assets/icon-users.svg" width="20" height="20" alt=""> **User management**: validate OPC credentials automatically, then create or delete a managed local account or clear credentials from one menu, without overwriting or resetting an existing user's password.
+- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Configuration management**: adjust DCOM permissions, the default authentication level, and protocol order; preview changes independently, then apply them after confirmation.
+- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Configuration templates**: Pro and Enterprise can export configuration and user credentials to an encrypted `.dc` file for review and application on another computer.
+- <img src="assets/icon-components.svg" width="20" height="20" alt=""> **Component deployment**: install or repair the OPC runtime environment as needed and ensure OPCEnum and the automation components are available.
+- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Server discovery and connection testing**: discover registered OPC DA servers on this or a target host with the configured OPC user, or enter a ProgID / CLSID manually. See causes and next steps on failure; review network checks, stages, codes and original errors in connection history.
+- <img src="assets/icon-connection.svg" width="20" height="20" alt=""> **Browsing and monitoring**: expand branches on demand, query full ItemIDs, read once, or set individual and batch polling intervals; inspect values, quality, timestamps, and read errors. Boolean values display as `0/1`.
+- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Monitoring tasks**: create a task before adding tags, and refresh the task list to reconcile disk changes. Preview live trends without starting detection; after configuring a complete numeric trigger rule, collect tags in batches at one interval and archive event-window PDF and CSV reports.
+- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Connection history**: retain successful and failed attempts, restore recent target inputs after restart, and restore or delete records from the context menu without losing the scroll position. Passwords are excluded.
+- <img src="assets/icon-settings.svg" width="20" height="20" alt=""> **Network tools**: remote checks show target connectivity only; local checks also show local listeners and firewall rules. Add local inbound TCP / UDP port rules in batches.
+- <img src="assets/icon-report.svg" width="20" height="20" alt=""> **Diagnostic reports**: export PDF or HTML for troubleshooting, handover, and archiving.
+- <img src="assets/icon-language.svg" width="20" height="20" alt=""> **Bilingual interface**: switch between Simplified Chinese and English in the sidebar; the application remembers your selection.
 
-## 离线授权
+## Offline licensing
 
-客户端始终启用离线授权体系，不依赖官网或现场联网。所有正式发布版本都使用该授权体系；未激活时为 Free 基础版，输入有效激活码后按授权类型启用 Pro 或企业版功能。
+The client always uses offline licensing and does not require a website or an internet connection at the deployment site. Licensing is mandatory in every official release. An unactivated installation runs as the Free edition; a valid activation code enables the features assigned to Pro or Enterprise.
 
-| 类型 | 激活要求 | 当前功能范围 |
+| Edition | Activation | Current feature scope |
 |---|---|---|
-| Free | 无激活码，客户端默认状态 | 配置诊断、用户验证、变更预览、OPC 基础连接／浏览／单点读取、网络状态检查、历史与日志；PDF 带 Free 水印 |
-| Pro | 32 位 Pro 激活码 | 全部功能，PDF／HTML 报告无水印 |
-| Enterprise | 32 位企业版激活码 | 当前与 Pro 相同，但使用独立权限集合，便于后续分别调整 |
+| Free | No code; the default client state | Diagnostics, user validation, change preview, basic OPC connection/browsing/single reads, network status checks, history, and logs; PDF reports include a Free watermark |
+| Pro | 32-character Pro activation code | All features, with watermark-free PDF and HTML reports |
+| Enterprise | 32-character Enterprise activation code | Currently the same as Pro, but backed by a separate entitlement set for future differentiation |
 
-激活码由 8 组、每组 4 个字符组成，并包含授权类型、唯一授权编号、首次激活截止日期、可选的使用到期日期及申请信息摘要。首次激活截止日期只限制新设备首次激活；已激活设备继续按照使用到期日期校验。
+An activation code contains eight groups of four characters and carries the edition, a unique license ID, a first-activation deadline, an optional usage expiry date, and an application-identity digest. The first-activation deadline restricts only activation on new devices; an activated device continues to use the separate usage-expiry rule.
 
-### 免费 Pro 激活码
+### Complimentary Pro activation codes
 
-以下三个激活码供用户免费使用；首次激活截止日和使用截止日均为 **2026-12-31**。
+These three codes are free to use. Both the first-activation deadline and usage expiry date are **2026-12-31**.
 
-| 授权编号 | 激活码 |
+| License ID | Activation code |
 |---|---|
 | PRO-0000001569 | `444Z-R2FW-0000-C89X-PKHP-CS53-SPVC-AZPB` |
 | PRO-0000001570 | `444Z-R2FW-0000-C8HX-PKHP-CS5E-N5J3-WRAR` |
 | PRO-0000001571 | `444Z-R2FW-0000-C8SX-PKHP-CS0H-PFFT-90ZP` |
 
-## 系统要求
+## Requirements
 
-- 支持 64 位 Windows；DComEasy 以 32 位进程运行，以兼容 OPC DA 及相关 COM 组件。
-- 使用管理员权限安装和运行 DComEasy。
-- 使用完整的离线安装包；安装包已包含所需的 .NET 运行时。
-- 连接测试需要可访问的 OPC DA 服务器及该环境下有效的 OPC 用户信息。
+- Supports 64-bit Windows. DComEasy runs as a 32-bit process for compatibility with OPC DA and related COM components.
+- Administrator privileges to install and run DComEasy.
+- The complete offline installer, which includes the required .NET runtime.
+- A reachable OPC DA server and valid OPC user credentials for connection testing.
 
-## 下载与安装
+## Download and installation
 
-1. 前往 [Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest) 下载官方安装包。
-2. 以管理员身份运行安装程序。
-3. 从开始菜单启动 DComEasy，并按提示以管理员身份运行。
+1. Download the official installer from [Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest).
+2. Run the installer as an administrator.
+3. Start DComEasy from the Start menu and run it with administrator privileges when prompted.
 
-安装新版时无需先卸载旧版。关闭 DComEasy 后，以管理员身份运行新版安装包；目录页默认显示原安装位置，保留该目录即可原地升级，也可选择其他空目录。授权状态、日志、连接历史和用户自有文件会保留。
+To install a newer release, close DComEasy and run the newer installer as an administrator without uninstalling first. The directory page defaults to the current installation; keep it for an in-place upgrade or choose another empty directory. License state, logs, connection history, and user-owned files are preserved.
 
-安装包来自本仓库的 GitHub Releases。请勿从不明来源下载安装包，也不要只复制安装目录中的单个 EXE 文件。
+Use installers published through this repository's GitHub Releases. Do not download installers from unknown sources or copy only the application executable from an installation directory.
 
-安装包及其对应的 SHA-256 校验值请查看[官方 Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest)。
+Find the installer and its SHA-256 checksum on [official Releases](https://github.com/Todayos/DComEasy-Releases/releases/latest).
 
-公开 SHA-256 不会泄露源码、授权密钥或激活码生成方法，它只用于确认文件未损坏或被替换。SHA-256 本身不能独立证明发布者身份；如果安装包和校验值同时被替换，比较仍可能通过，因此请只从本仓库的正式 Release 下载。安装包重新构建后校验值会变化，应以对应 Release 公布的值为准。
+Publishing a SHA-256 checksum does not expose source code, licensing keys, or the activation-code generation method. It only helps confirm that a file was not damaged or replaced. A checksum alone does not authenticate the publisher: if both the installer and published checksum are replaced, the comparison can still pass. Download only from this repository's official Releases. Rebuilding an installer changes its checksum, so use the value published for the corresponding release.
 
-更详细的操作步骤见[使用指南](docs/usage.md)。
+See the [user guide](docs/usage.en.md) for detailed instructions.
 
-## 加入产品技术交流群
+## Feedback
 
-扫描下方二维码添加微信，备注「DComEasy」，即可受邀加入 DComEasy 产品技术交流群。
+Search the [existing issues](https://github.com/Todayos/DComEasy-Releases/issues) before opening a new one. If no matching issue exists, use one of the templates:
 
-<p align="center">
-  <img src="assets/wechat-contact.jpg" alt="添加微信，加入 DComEasy 产品技术交流群" width="320">
-</p>
+- [Report a bug](https://github.com/Todayos/DComEasy-Releases/issues/new?template=bug_report.yml)
+- [Request a feature](https://github.com/Todayos/DComEasy-Releases/issues/new?template=feature_request.yml)
 
-微信号：`North797`（添加时请备注「DComEasy」）
+Include the DComEasy version, Windows version, reproduction steps, expected result, and actual result. Remove account names, host names, IP addresses, and other sensitive information from screenshots and logs. Never submit passwords.
 
-## 问题反馈
-
-提交问题前请先搜索[现有 Issues](https://github.com/Todayos/DComEasy-Releases/issues)。如果没有相同问题，请使用对应模板提交：
-
-- [报告问题](https://github.com/Todayos/DComEasy-Releases/issues/new?template=bug_report.yml)
-- [提出功能建议](https://github.com/Todayos/DComEasy-Releases/issues/new?template=feature_request.yml)
-
-> [!TIP]
-> 提交问题时，请提供 DComEasy 版本、Windows 版本、复现步骤、预期结果和实际结果。
-
-> [!WARNING]
-> 上传截图或日志前，请移除账号、主机名、IP 地址和其他敏感信息。请勿提交密码。
-
-## 版权与许可
+## Copyright and license
 
 Copyright © 2026 Todayos. All rights reserved.
 
-DComEasy 为专有软件。所有正式发布版本均启用离线授权机制；未激活时仅提供 Free 基础功能，Pro 和企业版功能必须使用有效激活码。本仓库公开可见不代表授予源码修改、转售或再分发权利。软件的具体使用条件以发布包中附带的许可条款为准；第三方组件适用其各自的许可条款。
+DComEasy is proprietary software. Every official release uses offline licensing. An unactivated installation provides only the Free edition's basic features; Pro and Enterprise features require a valid activation code. Public access to this repository does not grant source modification, resale, or redistribution rights. The license terms included with each release package govern use of the software. Third-party components remain subject to their respective licenses.

@@ -1,6 +1,6 @@
 # 使用指南
 
-[项目首页](../README.md) · 简体中文 | [English](usage.en.md) · [License](../LICENSE)
+[项目首页](../README.zh-CN.md) · 简体中文 | [English](usage.en.md) · [License](../LICENSE)
 
 ## 启动与界面语言
 
